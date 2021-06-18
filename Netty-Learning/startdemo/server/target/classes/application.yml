@@ -1,0 +1,7 @@
+server:
+  port: 19000
+myConfig:
+  hbase:
+    quorum: hdp1.infiai.com
+    rootDir:
+    nodeParent:
