@@ -1,0 +1,44 @@
+server:
+  servlet:
+    encoding:
+      charset: utf-8
+      force-response: true
+  port: ${my-config.server.port}
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: ${my-config.eureka.instance.heartbeatInterval}
+    lease-expiration-duration-in-seconds: ${my-config.eureka.instance.deadInterval}
+  client:
+    service-url:
+      #      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${my-config.eureka.instance.hostname}:8000/eureka/
+      defaultZone: http://${my-config.eureka.instance.hostname}:8000/eureka/
+    registry-fetch-interval-seconds: ${my-config.eureka.client.fetchRegistryInterval}
+
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+  http:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 100Mb
+  servlet:
+    multipart:
+      location: /tmp/upload_tmp
+zuul:
+  customizedLB:
+    enabled: true
+  ribbon:
+    eager-load:
+      enabled: true
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 45000

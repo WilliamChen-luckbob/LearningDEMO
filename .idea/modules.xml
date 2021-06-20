@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dynamic-zuul-gateway/common/common.iml" filepath="$PROJECT_DIR$/dynamic-zuul-gateway/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-zuul-gateway/dynamic-zuul-gateway.iml" filepath="$PROJECT_DIR$/dynamic-zuul-gateway/dynamic-zuul-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-zuul-gateway/eureka/eureka.iml" filepath="$PROJECT_DIR$/dynamic-zuul-gateway/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-zuul-gateway/gateway/gateway.iml" filepath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learning.iml" filepath="$PROJECT_DIR$/.idea/learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-zuul-gateway/service1/service1.iml" filepath="$PROJECT_DIR$/dynamic-zuul-gateway/service1/service1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-zuul-gateway/service2/service2.iml" filepath="$PROJECT_DIR$/dynamic-zuul-gateway/service2/service2.iml" />
     </modules>
   </component>
 </project>

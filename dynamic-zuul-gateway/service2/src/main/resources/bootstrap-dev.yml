@@ -1,0 +1,5 @@
+infiai:
+  nacos:
+    config:
+      namespace: 462a3600-7bfd-42c6-839c-20f4caad5d97
+      group: DEFAULT_GROUP

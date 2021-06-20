@@ -1,0 +1,25 @@
+server:
+  port: ${my-config.server.port}
+spring:
+  application:
+    name: web-eureka
+  profiles:
+    active: dev
+#  security:
+#    basic:
+#      enabled: false
+#    user:
+#      name: eureka
+#      password: aW5maWFpLXdlYi1zeXN0ZW0tZXVyZWthLWNlbnRlcg==
+eureka:
+  server:
+    eviction-interval-timer-in-ms: ${my-config.eureka.server.refreshInterval}
+    enable-self-preservation: false
+  client:
+    service-url:
+#      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${my-config.eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${my-config.eureka.instance.hostname}:8000/eureka/
+
+    register-with-eureka: false
+    fetch-registry: false
+

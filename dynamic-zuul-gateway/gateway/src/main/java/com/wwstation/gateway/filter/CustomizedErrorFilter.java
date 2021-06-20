@@ -5,7 +5,7 @@ import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import com.wwstation.common.Constants;
 import com.wwstation.common.RegexUtils;
-import exceptions.FilterAsserts;
+import com.wwstation.gateway.exceptions.FilterAsserts;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

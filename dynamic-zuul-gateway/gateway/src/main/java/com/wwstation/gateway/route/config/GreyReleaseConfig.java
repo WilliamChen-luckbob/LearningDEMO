@@ -1,11 +1,11 @@
 package com.wwstation.gateway.route.config;
 
-import cn.hutool.core.collection.CollectionUtil;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
@@ -33,7 +33,7 @@ public class GreyReleaseConfig {
 
     @PostConstruct
     private void init(){
-        if (CollectionUtil.isNotEmpty(urls)){
+        if (!CollectionUtils.isEmpty(urls)){
            urlMap= urls.stream().collect(Collectors.toMap(
                 k->k.getMethod()+"|/"+k.getServiceName()+ k.getUrl(),
                 v->v

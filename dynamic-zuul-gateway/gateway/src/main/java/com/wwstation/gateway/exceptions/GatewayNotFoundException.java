@@ -1,4 +1,4 @@
-package exceptions;
+package com.wwstation.gateway.exceptions;
 
 import lombok.Getter;
 

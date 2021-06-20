@@ -1,4 +1,4 @@
-package exceptions;
+package com.wwstation.gateway.exceptions;
 
 import com.alibaba.fastjson.JSONObject;
 import com.netflix.zuul.context.RequestContext;

@@ -1,6 +1,7 @@
 package com.wwstation.gateway.route.config;
 
-import com.infiai.webgateway.route.NewZuulRouteLocator;
+
+import com.wwstation.gateway.route.NewZuulRouteLocator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
