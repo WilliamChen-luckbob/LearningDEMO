@@ -1,5 +1,6 @@
 package com.wwstation.common.config;
 
+import com.wwstation.common.Constants;
 import lombok.Data;
 
 import java.util.Collections;

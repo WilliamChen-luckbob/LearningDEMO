@@ -1,0 +1,16 @@
+com\wwstation\common\config\RibbonFilterContextHolder.class
+com\wwstation\common\CommonResult.class
+com\wwstation\common\greyrelease\DiscoveryEnabledRule.class
+com\wwstation\common\config\RibbonHystrixConcurrencyStrategyModified$WrappedCallable.class
+com\wwstation\common\config\RibbonFilterContextHolder$1.class
+com\wwstation\common\greyrelease\DiscoveryEnabledPredicate.class
+com\wwstation\common\config\RibbonFilterContext.class
+com\wwstation\common\config\FeignGreyConfig$1.class
+com\wwstation\common\config\RibbonHystrixConcurrencyStrategyModified.class
+com\wwstation\common\greyrelease\AutoConfig.class
+com\wwstation\common\RegexUtils.class
+com\wwstation\common\greyrelease\MetadataAwarePredicate.class
+com\wwstation\common\config\FeignGreyConfig.class
+com\wwstation\common\config\FeignConfig.class
+com\wwstation\common\greyrelease\MetadataAwareRule.class
+com\wwstation\common\Constants.class

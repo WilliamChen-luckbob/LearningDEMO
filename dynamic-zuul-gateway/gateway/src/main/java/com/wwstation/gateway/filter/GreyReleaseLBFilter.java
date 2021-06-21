@@ -53,6 +53,9 @@ public class GreyReleaseLBFilter extends ZuulFilter {
 
         Map<String, GreyReleaseConfigDetail> urlMap = config.getUrlMap();
         Double v = Math.random() * 10;
+        //进入网关后清理tag
+        RibbonFilterContextHolder.clearCurrentContext();
+
 
         //如果完全没有指定需要灰度的url，使用全局灰度策略
         if (CollectionUtils.isEmpty(urlMap)) {

@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4b424fe-2ba3-4a03-94d7-67c7062ecbfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service1/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service1/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service1/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service2/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service2/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service2/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/common/target/classes/com/wwstation/common/CommonResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/common/target/classes/com/wwstation/common/CommonResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/com/wwstation/gateway/filter/CustomizedErrorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/com/wwstation/gateway/filter/CustomizedErrorFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/com/wwstation/gateway/route/config/GreyReleaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/com/wwstation/gateway/route/config/GreyReleaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/com/wwstation/gateway/route/config/NewZuulConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/com/wwstation/gateway/route/config/NewZuulConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/exceptions/FilterAsserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/com/wwstation/gateway/exceptions/FilterAsserts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/exceptions/GatewayNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/gateway/src/main/java/com/wwstation/gateway/exceptions/GatewayNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/service1/src/main/java/com/wwstation/service1/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service1/src/main/java/com/wwstation/service1/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/service2/src/main/java/com/wwstation/service2/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service2/src/main/java/com/wwstation/service2/TestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +21,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="ExpandSpringBootSpringBootSettingsPanel" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -47,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dynamic-zuul-gateway/service2/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dynamic-zuul-gateway" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -62,7 +47,7 @@
       <recent name="D:\CodeRepository\learning\dynamic-zuul-gateway\gateway\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.gateway">
+  <component name="RunManager" selected="Spring Boot.eureka">
     <configuration name="eureka" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="eureka" />
       <extension name="coverage">
@@ -91,6 +76,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="service1 Test" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wwstation.service1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wwstation.service1.Application" />
+      <option name="VM_PARAMETERS" value="-Dmy-config.eureka.instance.greyTag=Test" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="service1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="service1" />
       <extension name="coverage">
@@ -100,6 +100,21 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wwstation.service1.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="service2 Test" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wwstation.service2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wwstation.service2.Application" />
+      <option name="VM_PARAMETERS" value="-Dmy-config.eureka.instance.greyTag=Test" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,6 +135,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.service2 Test" />
+      <item itemvalue="Spring Boot.service1 Test" />
       <item itemvalue="Spring Boot.eureka" />
       <item itemvalue="Spring Boot.gateway" />
       <item itemvalue="Spring Boot.service2" />
@@ -148,6 +165,7 @@
       <workItem from="1624111942866" duration="788000" />
       <workItem from="1624175297244" duration="1073000" />
       <workItem from="1624176408128" duration="1719000" />
+      <workItem from="1624237935578" duration="318000" />
     </task>
     <servers />
   </component>
@@ -159,10 +177,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1624177143922" />
-    <state x="414" y="175" width="1174" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624176351618">
+    <state x="414" y="175" width="1174" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624238081515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1174" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624176351618" />
+    <state x="414" y="175" width="1174" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624238081515" />
     <state x="730" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1624176204964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -171,10 +190,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="547" y="436" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624176286707" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1624177162393">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1624238246004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1624177162393" />
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624238246004" />
     <state width="1877" height="345" key="GridCell.Tab.0.bottom" timestamp="1624178131409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
