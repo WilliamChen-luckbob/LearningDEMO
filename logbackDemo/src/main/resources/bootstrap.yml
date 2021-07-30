@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: graceful-shutdown
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: 47.106.102.212:8848
+        # 配置文件后缀名为yaml
+        file-extension: yaml
+        namespace: aba37a36-5136-4e8d-9f02-dd041d877879
+        group: DEFAULT_GROUP
+      username: nacos
+      password: aW5maWFpIG5hY29zIHByb2Qgc2VydmVy
+

@@ -1,0 +1,77 @@
+server:
+  servlet:
+    encoding:
+      charset: utf-8
+      force-response: true
+  port: ${my-config.server.port}
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: ${my-config.eureka.instance.heartbeatInterval}
+    lease-expiration-duration-in-seconds: ${my-config.eureka.instance.deadInterval}
+    metadata-map:
+      greyReleaseTag: ${my-config.eureka.instance.greyTag:}
+  client:
+    service-url:
+      #      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${my-config.eureka.instance.hostname}:8000/eureka/
+      # defaultZone: http://${my-config.eureka.instance.hostname}:8000/eureka/
+      defaultZone: ${my-config.eureka.instance.hostname}
+    registry-fetch-interval-seconds: ${my-config.eureka.client.fetchRegistryInterval}
+
+spring:
+  data:
+    mongodb:
+      host: dds-wz903ad4c3ca1f34-pub.mongodb.rds.aliyuncs.com
+      port: 3717
+      database: infiai_web_system
+      username: william
+      password: Lk123456
+  mvc:
+    servlet:
+      load-on-startup: 1
+  application:
+    name: graceful-shutdown
+
+  sleuth:
+    redis:
+      enabled: false
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
+  eager-load:
+    enabled: true
+    clients:
+      - web-resource-center
+      - web-task-center
+      - web-security
+      - web-message-center
+      - web-system
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 45000
+swagger:
+  enable: ${my-config.swagger.enabled}
+  application-name: ${spring.application.name}
+  application-version: 1.0
+  application-description: 新旧版本兼容网关
+  host: http://localhost:${server.port}
+#logging:
+#  config:
+#    root-path: ${my-config.logging.config.root-path}
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#customsconfig:
+#  logging:
+#    config:
+#      root-path: ${my-config.logging.config.root-path}

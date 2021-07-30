@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
         <module name="gateway" />
-        <module name="eureka" />
-        <module name="service2" />
         <module name="service1" />
+        <module name="service2" />
+        <module name="eureka" />
       </profile>
     </annotationProcessing>
   </component>

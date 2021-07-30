@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4b424fe-2ba3-4a03-94d7-67c7062ecbfa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/service1/src/main/java/com/wwstation/service1/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service1/src/main/java/com/wwstation/service1/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/service2/src/main/java/com/wwstation/service2/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/service2/src/main/java/com/wwstation/service2/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-model/src/main/java/com/wwstation/designmodel/单例模式/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-model/src/main/java/com/wwstation/designmodel/单例模式/Singleton1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-model/src/main/java/com/wwstation/designmodel/单例模式/Singleton2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/java/com/wwstation/logbackdemo/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/java/com/wwstation/logbackdemo/component/Logprint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty-Learning/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Netty-Learning/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/.idea/compiler.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dynamic-zuul-gateway" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -166,6 +173,7 @@
       <workItem from="1624175297244" duration="1073000" />
       <workItem from="1624176408128" duration="1719000" />
       <workItem from="1624237935578" duration="318000" />
+      <workItem from="1627029273642" duration="44000" />
     </task>
     <servers />
   </component>
