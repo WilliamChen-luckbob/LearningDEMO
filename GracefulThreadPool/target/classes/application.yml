@@ -1,0 +1,8 @@
+server:
+  port: 18888
+spring:
+  application:
+    name: graceful-threadpool
+  thread-pool:
+    reject-free:
+      enabled: true

@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4b424fe-2ba3-4a03-94d7-67c7062ecbfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/design-model/src/main/java/com/wwstation/designmodel/单例模式/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-model/src/main/java/com/wwstation/designmodel/单例模式/Singleton1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-model/src/main/java/com/wwstation/designmodel/单例模式/Singleton2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/java/com/wwstation/logbackdemo/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/java/com/wwstation/logbackdemo/component/Logprint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logbackDemo/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Netty-Learning/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Netty-Learning/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-zuul-gateway/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-zuul-gateway/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dynamic-LogBack/src/main/java/com/wwstation/dynamiclogback/DynamicLogbackApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dynamic-LogBack/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dynamic-LogBack/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fat_calculator/src/main/java/com/wwstation/FatCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fat_calculator/src/main/java/com/wwstation/PA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/wwstation/leetcode/test/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/.idea/compiler.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +172,8 @@
       <workItem from="1624176408128" duration="1719000" />
       <workItem from="1624237935578" duration="318000" />
       <workItem from="1627029273642" duration="44000" />
+      <workItem from="1631850603609" duration="32000" />
+      <workItem from="1631850744073" duration="84000" />
     </task>
     <servers />
   </component>
