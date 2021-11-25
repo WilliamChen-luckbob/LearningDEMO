@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: seckill
+  profiles:
+    include: common

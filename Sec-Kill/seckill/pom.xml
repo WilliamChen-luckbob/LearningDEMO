@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Sec-Kill</artifactId>
+        <groupId>com.wwstation</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>seckill</artifactId>
+
+    <description>
+        秒杀主服务
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.wwstation</groupId>
+            <artifactId>common-application</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.wwstation</groupId>-->
+<!--            <artifactId>common-feign-api</artifactId>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.wwstation</groupId>
+            <artifactId>common-dubbo-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wwstation</groupId>
+            <artifactId>common-redis</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

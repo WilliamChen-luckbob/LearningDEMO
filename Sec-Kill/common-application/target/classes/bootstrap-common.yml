@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.24.201:8848
+        namespace: ${wwstation.nacos.config.namespace}
+        group: ${wwstation.nacos.config.group}
+      config:
+        server-addr: 192.168.24.201:8848
+        # 配置文件后缀名为yaml
+        file-extension: yaml
+        namespace: ${wwstation.nacos.config.namespace}
+        group: ${wwstation.nacos.config.group}
+      username: nacos
+      password: nacos
+dubbo:
+  registry:
+    address: nacos://${spring.cloud.nacos.config.server-addr}/?username=${spring.cloud.nacos.username}&password=${spring.cloud.nacos.password}
+    parameters[namespace]: a66b5b63-982f-4a6e-a11a-c2a15c3396b8
+  protocol:
+    name: dubbo
+    port: -1

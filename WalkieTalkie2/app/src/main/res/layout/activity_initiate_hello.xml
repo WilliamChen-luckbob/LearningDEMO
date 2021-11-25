@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"  tools:context=".SelectPeerActivity">
+
+        <TextView android:id="@+id/textViewInstructions"
+            android:text="Nearby Walkies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1b307d"
+            android:textSize="24dp" />
+        <ListView android:id="@+id/listViewPeers"
+            android:layout_below="@+id/textViewInstructions"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            </ListView>
+        <!--<Button android:id="@+id/btnStart"
+            android:layout_below="@+id/listViewPeers"
+            android:text="CALL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="startAudioCapture"/>-->
+        <TextView android:id="@+id/textViewStatus"
+            android:layout_below="@+id/btnStart"
+            android:text="Status" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+</LinearLayout>

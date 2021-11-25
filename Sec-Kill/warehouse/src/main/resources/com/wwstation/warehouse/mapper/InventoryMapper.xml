@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wwstation.warehouse.mapper.InventoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wwstation.warehouse.model.po.Inventory">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="qty_total" property="qtyTotal" />
+        <result column="qty_lock" property="qtyLock" />
+        <result column="qty_available" property="qtyAvailable" />
+        <result column="qty_invailable" property="qtyInvailable" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, qty_total, qty_lock, qty_available, qty_invailable
+    </sql>
+    <update id="preReduceInventory">
+        UPDATE inventory
+        SET
+        qty_available=qty_available-#{num},
+        qty_lock=qty_lock+#{num} WHERE qty_available >=#{num} and id=#{id}
+    </update>
+    <update id="realReduceInventory">
+        UPDATE inventory
+        SET
+        qty_total=qty_total-#{num},
+        qty_lock=qty_lock-#{num} WHERE qty_lock >=#{num} and qty_total>=#{num} and id=#{id}
+    </update>
+    <update id="rollBackFromSold">
+        SELECT qty_total,qty_available from inventory where id=#{id} for update;
+        UPDATE inventory
+        SET
+        qty_total=qty_total+#{num},
+        qty_available=qty_available+#{num};
+    </update>
+    <update id="rollBackFromTimeout">
+        SELECT qty_total,qty_available from inventory where id=#{id} for update;
+        UPDATE inventory
+        SET
+        qty_lock=qty_lock-#{num},
+        qty_available=qty_available+#{num}
+        where qty_lock>=#{num} and id=#{id};
+    </update>
+
+</mapper>

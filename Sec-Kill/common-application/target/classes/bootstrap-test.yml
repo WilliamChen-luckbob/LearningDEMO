@@ -1,0 +1,5 @@
+wwstation:
+  nacos:
+    config:
+      namespace: a66b5b63-982f-4a6e-a11a-c2a15c3396b8
+      group: DEFAULT_GROUP
